@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C48360C72BE80F1800A861C2 /* Remote_WorkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48360C62BE80F1800A861C2 /* Remote_WorkApp.swift */; };
-		C48360C92BE80F1800A861C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48360C82BE80F1800A861C2 /* ContentView.swift */; };
+		C48360C92BE80F1800A861C2 /* TodaysLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48360C82BE80F1800A861C2 /* TodaysLocation.swift */; };
 		C48360CB2BE80F1900A861C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48360CA2BE80F1900A861C2 /* Assets.xcassets */; };
 		C48360CE2BE80F1900A861C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48360CD2BE80F1900A861C2 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		C48360C32BE80F1800A861C2 /* Remote-Work.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Remote-Work.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48360C62BE80F1800A861C2 /* Remote_WorkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remote_WorkApp.swift; sourceTree = "<group>"; };
-		C48360C82BE80F1800A861C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C48360C82BE80F1800A861C2 /* TodaysLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysLocation.swift; sourceTree = "<group>"; };
 		C48360CA2BE80F1900A861C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C48360CD2BE80F1900A861C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				C48360C62BE80F1800A861C2 /* Remote_WorkApp.swift */,
-				C48360C82BE80F1800A861C2 /* ContentView.swift */,
+				C48360C82BE80F1800A861C2 /* TodaysLocation.swift */,
 				C48360CA2BE80F1900A861C2 /* Assets.xcassets */,
 				C48360CC2BE80F1900A861C2 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C48360C92BE80F1800A861C2 /* ContentView.swift in Sources */,
+				C48360C92BE80F1800A861C2 /* TodaysLocation.swift in Sources */,
 				C48360C72BE80F1800A861C2 /* Remote_WorkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
