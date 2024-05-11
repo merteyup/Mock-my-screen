@@ -9,16 +9,16 @@ import SwiftUI
 
 struct TodaysLocation: View {
     @State private var companyYouWorkFor = "Your Company If You Share"
-    @State private var yourMood = "Calm and productive"
-    @State private var locationYouWishToBe = "As you wish"
-    @State private var buttonText = "Submit"
-    @State private var backgroundImageIndex = 0
+    @State private var yourMoods = ["Calm", "Energetic", "Creative", "Productive", "Smooth"]
+    @State private var locationYouWishToBe = "---Add your own locations here---"
+    @State private var buttonTexts = ["Move On", "Continue", "Next", "New Chapter", "Keep Up"]
+    @State private var contextIndex = 0
 
     let backgroundImages = ["beach", "boxer", "homeOffice", "lego", "notebooks"]
 
     var body: some View {
         ZStack {
-            Image(backgroundImages[backgroundImageIndex])
+            Image(backgroundImages[contextIndex])
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
@@ -31,7 +31,7 @@ struct TodaysLocation: View {
                     .background(Color.white.opacity(0.8))
                     .bold()
                 
-                Text(yourMood)
+                Text(yourMoods[contextIndex])
                     .font(.headline)
                     .padding()
                     .background(Color.white.opacity(0.8))
@@ -41,12 +41,12 @@ struct TodaysLocation: View {
                 VStack(alignment: .leading) {
                     LocationView(systemName: "globe", text: locationYouWishToBe)
                     CompanyNameView(text: companyYouWorkFor)
-                    ProjectTitleView(text: yourMood)
+                    ProjectTitleView(text: yourMoods[contextIndex])
                     
                     Button(action: {
                         toggleBackgroundImage()
                     }) {
-                        Text(buttonText)
+                        Text(buttonTexts[contextIndex])
                             .padding()
                             .foregroundColor(.white)
                             .background(Color.blue)
@@ -60,7 +60,7 @@ struct TodaysLocation: View {
     }
     
     func toggleBackgroundImage() {
-        backgroundImageIndex = (backgroundImageIndex + 1) % backgroundImages.count
+        contextIndex = (contextIndex + 1) % backgroundImages.count
     }
 }
 
