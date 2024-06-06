@@ -1,6 +1,6 @@
-# Mock Remote
+# Mock My Screen
 
-MockRemote is a Swift project for having some fun.
+Mock My Screen is a Swift project for having some fun.
 
 ## Installation
 
