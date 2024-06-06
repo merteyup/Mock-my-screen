@@ -8,7 +8,9 @@ Use your favorite way to clone the project on your Mac.
 
 ## Usage
 
-Open project on XCode.
+Open project on XCode where you feel like to.
+Set your computer somewhere safe.
+Take your best picture with a view and your screen.
 
 ## Contributing
 
